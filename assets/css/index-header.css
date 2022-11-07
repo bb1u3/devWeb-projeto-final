@@ -1,0 +1,216 @@
+header{
+    background-image: url(../img/bg-clouds.svg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Nav Section */
+
+.nav__section{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.logo__section{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__logo--img{
+    width: 180px;
+}
+
+#burguer{
+    color: var(--logo-color);
+    cursor: pointer;
+    display: none;
+}
+
+.header__nav--list{
+    display: flex;
+    gap: 1rem;
+}
+
+.header__nav--link{
+    color: var(--white);
+    font-family: var(--font-mont-semi);
+    font-size: 1.2rem;
+    transition: .2s ease-in-out;
+}
+
+.header__nav--link:hover{
+    color: var(--logo-color);
+}
+
+
+/* Banner Section */
+
+.banner__section{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.banner__texto{
+    align-items: flex-start;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 52%;
+}
+
+.banner__titulo{
+    font-family: var(--font-mont-bold);
+    font-size: 6rem;
+}
+
+.banner__descricao{
+    font-size: 1.5rem;
+}
+
+.banner__img{
+    width: 38%;
+}
+
+/* Media Queries */
+
+/* 769px - 1279px */
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    .banner__texto{
+        width: 48%;
+    }
+    
+    .banner__titulo{
+        font-size: 4rem;
+    }
+
+    .banner__descricao{
+        font-size: 1.2rem;
+    }
+
+}
+
+/* 481px - 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .nav__section{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #burguer{
+        display: inline-block;
+        font-size: 3rem;
+    }
+
+    .header__nav{
+        background-color: var(--azul1blend);
+        display: none;
+        padding: 2rem 0;
+        width: 100vw;
+    }
+
+    .header__nav--list{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header__nav--item{
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner__section{
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .banner__texto{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner__titulo{
+        font-size: 3rem;
+    }
+
+    .banner__descricao{
+        font-size: 1rem;
+        max-width: 75%;
+    }
+
+    .banner__img{
+        width: 60%;
+    }
+}
+
+/* 320px - 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .nav__section{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #burguer{
+        display: inline-block;
+        font-size: 3rem;
+    }
+
+    .header__nav{
+        background-color: var(--azul1blend);
+        display: none;
+        padding: 2rem 0;
+        width: 100vw;
+    }
+
+    .header__nav--list{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header__nav--item{
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner__section{
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .banner__texto{
+        align-items: center;
+        gap: 2rem;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner__titulo{
+        font-size: 3rem;
+    }
+
+    .banner__descricao{
+        font-size: 1rem;
+        max-width: 75%;
+    }
+
+    .banner__img{
+        width: 60%;
+    }
+}

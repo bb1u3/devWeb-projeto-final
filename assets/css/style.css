@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Montserat-Thin;
+    src: url(../fonts/montserat/Montserrat-Thin.ttf) format(TrueType);
+}
+@font-face {
+    font-family: Montserat-SemiBold;
+    src: url(../fonts/montserat/Montserrat-SemiBold.ttf) format(TrueType);
+}
+@font-face {
+    font-family: Montserat-Regular;
+    src: url(../fonts/montserat/Montserrat-Regular.ttf) format(TrueType);
+}
+@font-face {
+    font-family: Montserat-Medium;
+    src: url(../fonts/montserat/Montserrat-Medium.ttf) format(TrueType);
+}
+@font-face {
+    font-family: Montserat-light;
+    src: url(../fonts/montserat/Montserrat-Light.ttf) format(TrueType);
+}
+@font-face {
+    font-family: Montserat-bold;
+    src: url(../fonts/montserat/Montserrat-Bold.ttf) format(TrueType);
+}
+@font-face {
+    font-family: Montserat-black;
+    src: url(../fonts/montserat/Montserrat-Black.ttf);
+}
+@font-face {
+    font-family: Montserat-extrabold;
+    src: url(../fonts/montserat/Montserrat-ExtraBold.ttf);
+}
+
+:root{
+    --font-mont-light: Montserat-light;
+    --font-mont-thin: Montserat-Thin;
+    --font-mont-regular : Montserat-Regular;
+    --font-mont-medium : Montserat-Medium;
+    --font-mont-semi: Montserat-SemiBold;
+    --font-mont-bold: Montserat-bold;
+    --font-mont-extraBold: Montserat-extrabold;
+    --font-mont-black: Montserat-black;
+
+    --white: #fff;
+
+    --logo-color: #E4B826;
+    
+    /* Paleta BBlueCompanyPalette */
+    --azul1: #000814ff;
+    --azul1blend: rgba(0, 8, 20, 0.486);
+    --azul2: #041C32;
+    --azul3: #001d3dff;
+    --azul4: #003566ff;
+    --azul-cloud-bg: #022733;
+    --amarelo1: #ffc300ff;
+    --amarelo2: #ffd60aff;
+
+    /* Paleta Dark */
+    --dark1: #000e14ff;
+    --dark2: #00111aff;
+    --dark3: #00141fff;
+    --dark4: #001824ff;
+    --dark5: #001b29ff;
+    --dark6: #002233ff;
+    --dark7: #00293dff;
+    --dark8: #003047ff;
+    --dark9: #003652ff;
+    --dark10: #003d5cff;
+
+    /* Paleta Light */
+    --light1: #f8f9faff;
+    --light2: #e9ecefff;
+    --light3: #dee2e6ff;
+    --light-gray1: #ced4daff;
+    --light-gray2: #adb5bdff;
+    --light-gray3: #6c757dff;
+    --light-gray4: #495057ff;
+    --light-gray5: #343a40ff;
+    --light-gray6: #212529ff;
+
+    /* Paleta Rosa */
+    --rosa0:#EB46A6;
+	--rosa1:#EB0089;
+	--rosa2:#9F005D;
+	--rosa3:#6B003E;
+}
+
+body{
+    background-color: var(--light1);
+    font-family: var(--font-mont-regular);
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.btn{
+    background-color: var(--logo-color);
+    border-radius: 30px;
+    color: var(--azul1);
+    font-family: var(--font-mont-semi);
+    padding: 1rem 3rem;
+    transition: .4s ease-in-out;
+}
+
+.btn:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.titulo__principal{
+    color: var(--white);
+    font-family: var(--font-mont-medium);
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 1279px) {
+    .container{
+        max-width: 85%;
+    }
+}
