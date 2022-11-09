@@ -1,0 +1,8 @@
+.services{
+    background-color: var(--light-gray1);
+    padding-top: 10rem;
+}
+
+.services__container .titulo__principal{
+    color: var(--azul1);
+}
