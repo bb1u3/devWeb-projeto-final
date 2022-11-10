@@ -29,6 +29,7 @@
     align-items: center;
     display: flex;
     gap: 2rem;
+    flex-flow: row wrap;
     justify-content: center;
 }
 
@@ -41,8 +42,9 @@
     flex-direction: column;
     height: 240px;
     justify-content: flex-end;
+    min-width: 280px;
     padding: 0 0 1rem 1rem;
-    width: 26%;
+    width: 28%;
 }
 
 .posts__list--item:nth-child(1){
@@ -79,4 +81,17 @@
 
 .posts__item--link:hover{
     text-decoration: underline;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .posts__header{
+        justify-content: center;
+    }
+
+    .posts__header--btn{
+        display: none;
+    }
 }
