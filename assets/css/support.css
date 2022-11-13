@@ -1,0 +1,118 @@
+.support{
+    background-color: var(--light-grey1);
+    padding: 2rem 0;
+}
+
+.support__container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.support .titulo__principal{
+    font-family: var(--font-mont-bold);
+    color: #000;
+}
+
+.support__content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.support__line{
+    border-left: 1px solid #000;
+    padding: 5rem 0;
+}
+
+.support__column{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    width: 40%;
+}
+
+.support__img{
+    width: 35%;
+}
+
+.support__text{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.support__text .titulo__principal{
+    cursor: pointer;
+    font-family: var(--font-mont-bold);
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.support__text .titulo__principal:hover{
+    text-decoration: underline;
+}
+
+
+/* Media Queries */
+
+/* Tablets - 481px - 768px */
+@media screen and (min-width: 481px) and (max-width:768px) {
+    .support__content{
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .support__column{
+        align-items: center;
+        display: flex;
+        gap: 1rem;
+        width: 90%;
+    }
+    .support__column:nth-child(3){
+        flex-direction: row-reverse;
+    }
+
+    .support__line{
+        border-bottom: 1px solid #000;
+        border-left:none;
+        padding: 0;
+        width: 80%;
+    }
+}
+
+/* Smartphones - 320px - 480px */
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .support__content{
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .support__column{
+        flex-direction: column;/*  */
+        width: 90%;
+    }
+
+    .support__img{
+        width: 90%;
+    }
+
+    .support__text{
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    .support__text .support__descr{
+        text-align: center;
+        width: 90%;
+    }
+
+    .support__line{
+        border-bottom: 1px solid #000;
+        border-left:none;
+        padding: 0;
+        width: 85%;
+    }
+}
