@@ -1,0 +1,39 @@
+.banner{
+    background-color: var(--azul2);
+    padding: 2rem 0;
+}
+
+.banner__container{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.spans{
+    display: flex;
+}
+
+.banner__span{
+    color: var(--white);
+}
+
+.banner__span a{
+    color: var(--logo-color);
+}
+
+.banner__span a:hover{
+    text-decoration: underline;
+}
+
+.banner__span:first-child::after{
+    content: " >";
+}
+
+.banner__span:nth-child(2)::before{
+    content: "> ";
+}
+
+.banner__descricao{
+    color: var(--white);
+}
