@@ -1,0 +1,124 @@
+.sobre__container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.sobre__container .titulo__principal{
+    color: #000;
+}
+
+.sobre__info{
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
+.sobre__info:nth-child(odd){
+    flex-direction: row;
+}
+
+.sobre__info--img{
+    width: 40%;
+}
+
+.sobre__info--texto{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+}
+
+.sobre__info--titulo{
+    font-family: var(--font-mont-bold);
+    font-size: 1.2rem;
+}
+
+.sobre--info--descricao{
+    text-indent: 1rem;
+    padding-left: 1rem;
+}
+.sobre--info--descricao::first-letter{
+    font-family: var(--font-mont-semi);
+}
+
+.expertise__section{
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.expertise__lista{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.expertise__item{
+    align-items: center;
+    background-color: var(--light-gray1);
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    gap: .5rem;
+    justify-content: center;
+    padding: 1rem;
+    width: 200px;
+}
+
+.expertise__item--icon{
+    width: 90%;
+}
+
+
+/* Media Queries */
+
+/* Tablets - 481px - 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .sobre__info{
+        flex-direction: column-reverse;
+    }
+    .sobre__info:nth-child(odd){
+        flex-direction: column;
+    }
+
+    .sobre__info--img{
+        width: 65%;
+    }
+
+    .sobre__info--texto{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 85%;
+    }
+
+}
+
+/* Smartphones - 320px - 480px */
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .sobre__info{
+        flex-direction: column-reverse;
+    }
+    .sobre__info:nth-child(odd){
+        flex-direction: column;
+    }
+
+    .sobre__info--img{
+        width: 85%;
+    }
+
+    .sobre__info--texto{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+}
