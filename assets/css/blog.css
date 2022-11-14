@@ -1,0 +1,75 @@
+.blog__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 0;
+    justify-content: center;
+}
+
+.blog__post{
+    align-items: center;
+    background-color: var(--light-gray1);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    width: 60%;
+}
+
+.blog__post--content{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.blog__post--img{
+    background-color: var(--azul1);
+    background-image: url(../img/poster_science.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 40vh;
+    width: 100%;
+}
+
+.blog__user, .blog__date{
+    font-size: .6rem;
+}
+
+.blog__text{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: .5rem;
+}
+
+.blog__text--titulo{
+    font-family: var(--font-mont-bold);
+    font-size: 2rem;
+}
+
+.blog__text--descricao{
+    font-size: .9rem;
+    line-height: 1.4rem;
+}
+
+
+/*  Media Queries */
+
+/* Tablets - 481px - 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .blog__post{
+        width: 85%;/*  */
+    }
+}
+
+/* Smartphones - 320px - 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .blog__post{
+        width: 95%;/*  */
+    }
+}
