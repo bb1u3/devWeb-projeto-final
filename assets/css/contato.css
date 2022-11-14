@@ -1,0 +1,191 @@
+.contato__container{
+    align-items: flex-start;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.contato__info{
+    background-color: var(--azul2);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 400px;
+    width: 40%;
+    min-width: 340px;
+    padding: 2rem;
+}
+
+.contato__item{
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    gap: 1rem;
+}
+
+.contato__item{
+    color: var(--logo-color);
+}
+
+.contato__link a{
+    color: var(--white);
+    font-family: var(--font-mont-semi);
+    font-size: 1.1rem;
+}
+
+.contato__form{
+    background-color: var(--logo-color);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    max-width: 580px;
+    width: 55%;
+    min-width: 300px;
+}
+
+.contato__form--header{
+    background-color: var(--azul2);
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+}
+
+.form{
+    padding: 1.1rem;
+}
+
+.form__control{
+    margin-bottom: .8rem;
+    padding-bottom: 1.2rem;
+    position: relative;
+}
+
+.form__control label{
+    display: inline-block;
+    font-family: var(--font-mont-semi);
+    margin-bottom: 5px;
+}
+
+.form__control input{
+    border: 2px solid #f0f0f0;
+    border-radius: .7rem;
+    display: block;
+    font-size: .9rem;
+    margin: 0 auto;
+    padding: .7rem;
+    width: 90%;
+}
+
+.form__control i{
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    visibility: hidden;
+}
+
+.form__control small{
+    font-family: var(--font-mont-semi);
+    font-size: .7rem;
+    bottom: 0;
+    left: 10px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.form__control textarea{
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.form button{
+    background-color: var(--azul2);
+    border: none;
+    border-radius: 5px;
+    color: var(--logo-color);
+    cursor: pointer;
+    width: 100%;
+}
+
+
+/* Error or Success */
+
+.form__control.success input {
+    border-color: #2ecc71;
+}
+
+.form__control.error input {
+    border-color: #e74c3c;
+}
+
+.form__control.success i.fa-circle-check{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form__control.error i.fa-circle-exclamation{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form__control.success small{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form__control.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+
+/* Media Queries */
+
+/* Desktop - 769px - 1279px */
+@media screen and (min-width: 769px) and (max-width: 1279px){
+    .contato__form{
+        background-color: var(--logo-color);
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        max-width: 580px;
+        width: 50%;
+        min-width: 300px;
+    }
+}
+
+/* Tablets - 481px - 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .contato__container{
+        align-items: center;/*  */
+        flex-direction: column;/*  */
+    }
+
+    .contato__info{
+        width: 90%;
+    }
+
+    .contato__form{
+        width: 90%;
+    }
+}
+
+/* Smartphones - 320px - 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .contato__container{
+        align-items: center;/*  */
+        flex-direction: column;/*  */
+    }
+
+    .contato__info{
+        width: 90%;
+        min-width: auto;
+    }
+
+    .contato__form{
+        width: 90%;
+        min-width: auto;
+    }
+}

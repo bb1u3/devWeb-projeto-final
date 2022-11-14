@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/pages__banner.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
     <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
@@ -52,6 +53,71 @@
                     <span class="banner__span">Contato</span>
                 </div>
                 <p class="banner__descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum eaque dolor.</p>
+            </div>
+        </section>
+        <section class="contato">
+            <div class="contato__container container">
+                <div class="contato__info">
+                    <h3 class="titulo__principal">Nossos Contatos</h3>
+                    <div class="contato__item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="contato__link">
+                            <a href="mailto:alceumonteiro24@gmail.com">Email Us</a>
+                        </span>
+                    </div>
+                    <div class="contato__item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span class="contato__link">
+                            <a href="https://api.whatsapp.com/send?phone=5581984499230" target="_blank">Iniciar conversa</a>
+                        </span>
+                    </div>
+                    <div class="contato__item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="contato__link">
+                            <a href="tel:+5581984499230">+55 81 984498230</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="contato__form">
+                    <div class="contato__form--header">
+                        <h2 class="titulo__principal">Solicitar Orçamento</h2>
+                    </div>
+                    <form action="" class="form" id="form">
+                        <div class="form__control">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" placeholder="Seu Nome*" required>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <i class="fa-sharp fa-solid fa-circle-check"></i>
+                            <small></small>
+                        </div>
+                        <div class="form__control">
+                            <label for="empresa">Nome da Empresa</label>
+                            <input type="text" id="empresa" placeholder="Empresa*" required>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <i class="fa-sharp fa-solid fa-circle-check"></i>
+                            <small></small>
+                        </div>
+                        <div class="form__control">
+                            <label for="email">E-Mail para Contato</label>
+                            <input type="email" id="email" placeholder="Seu Email*" required>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <i class="fa-sharp fa-solid fa-circle-check"></i>
+                            <small></small>
+                        </div>
+                        <div class="form__control">
+                            <label for="telefone">Número de Telefone</label>
+                            <input type="text" id="telefone" placeholder="Seu Telefone">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <i class="fa-sharp fa-solid fa-circle-check"></i>
+                            <small></small>
+                        </div>
+                        <div class="form__control">
+                            <label for="mensagem">Sua Ideia</label>
+                            <textarea name="mensagem" id="mensagem" cols="15" rows="4"></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn" class="btn">Enviar</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -123,6 +189,7 @@
         </section>
     </footer>
 
+    <script src="https://kit.fontawesome.com/87b85f0579.js" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
