@@ -35,7 +35,8 @@
 
 .posts__list--item{
     align-items: flex-start;
-    background-color: var(--azul2);
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.404);
     border-radius: 10px;
     box-sizing: border-box;
     display: flex;
@@ -48,18 +49,28 @@
 }
 
 .posts__list--item:nth-child(1){
-    background-color: red;
+    background-image: url(../img/post__thumb1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .posts__list--item:nth-child(2){
-    background-color: yellow;
+    background-image: url(../img/post__thumb2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .posts__list--item:nth-child(3){
-    background-color: green;
+    background-image: url(../img/post__thumb3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .posts__category{
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     color: var(--white);
+    font-size: .8rem;
 }
 
 .posts__item--titulo{

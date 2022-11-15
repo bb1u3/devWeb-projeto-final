@@ -27,13 +27,21 @@
 
 .blog__post--img{
     background-color: var(--azul1);
-    background-image: url(../img/poster_science.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
     height: 40vh;
     width: 100%;
+}
+.blog__post:nth-child(1) .blog__post--img{
+    background-image: url(../img/post__thumb1.jpg);
+}
+.blog__post:nth-child(2) .blog__post--img{
+    background-image: url(../img/post__thumb2.jpg);
+}
+.blog__post:nth-child(3) .blog__post--img{
+    background-image: url(../img/post__thumb3.jpg);
 }
 
 .blog__user, .blog__date{
