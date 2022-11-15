@@ -3,5 +3,5 @@
 Repositório criado para versionar e hospedar meu projeto.
  
  ## GitHub Pages
- 
-<a href="" target="_blank">Projeto hospedado no GitHub Pages</a>
+
+<a href="https://bb1u3.github.io/devWeb-projeto-final/" target="_blank">Projeto hospedado no GitHub Pages</a>
