@@ -1,4 +1,6 @@
 # devWeb-projeto-final
- Repositório criado para armazenar/versionar meu projeto final da matéria de Desenvolvimento Web
+
+Repositório criado para versionar e hospedar meu projeto.
  
-[Projeto Hospedado](https://bb1u3.github.io/devWeb-projeto-final/index.html)
+ ## GitHub Pages
+<a href="https://bb1u3.github.io/devWeb-projeto-final/index.html" target="_blank"/>Projeto hospedado no GitHub Pages
